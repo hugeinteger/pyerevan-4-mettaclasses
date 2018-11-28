@@ -1,5 +1,5 @@
-from django_parody.model import Model
-from django_parody.descriptors import Float, Integer, String
+from pseudo_django.model import Model
+from pseudo_django.descriptors import Float, Integer, String
 
 
 class Stock(Model):

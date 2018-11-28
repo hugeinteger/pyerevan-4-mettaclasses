@@ -1,5 +1,5 @@
-from django_parody.descriptors import Descriptor
-from django_parody.code_generators import generate_func_from_descriptors
+from pseudo_django.descriptors import Descriptor
+from pseudo_django.code_generators import generate_func_from_descriptors
 
 
 class ModelMeta(type):
