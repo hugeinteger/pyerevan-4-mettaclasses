@@ -1,8 +1,7 @@
 class CheckMethodsExistMeta(type):
     def __init__(cls, name, bases, clsdict):
         super().__init__(name, bases, clsdict)
-        # This hack can be fixed with additional parameters to the metaclass
-        if name == 'FooBarMustExist':
+        if not bases:
             return
         if not hasattr(cls, '_required_methods'):
             return
